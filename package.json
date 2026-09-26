@@ -1,0 +1,13 @@
+{
+  "name": "livecvetracker-root",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "yarn --cwd frontend dev",
+    "dev:backend": "cd backend && source .venv/bin/activate && uvicorn app.main:app --reload --port 8001",
+    "dev:backend:win": "cd backend && .venv\\Scripts\\activate && uvicorn app.main:app --reload --port 8000",
+    "dev": "concurrently -n \"frontend,backend\" -c \"cyan,magenta\" \"yarn dev:frontend\" \"yarn dev:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

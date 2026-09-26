@@ -1,0 +1,26 @@
+# Node / Yarn (Frontend)
+node_modules/
+dist/
+.yarn/cache
+.yarn/unplugged
+*.local
+
+# Python / Virtual Environments (Backend)
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# SQLite & Data Storage
+*.db
+*.sqlite3
+backend/data/
+
+# Environment Variables & IDE
+.env
+.env.*
+.vscode/
+.idea/
+.DS_Store
